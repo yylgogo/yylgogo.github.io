@@ -165,6 +165,83 @@
           <div id="js-content" class="content-ll">
             
   
+    <article id="post-集合的操作" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2018/07/20/集合的操作/">集合的操作</a>
+    </h1>
+  
+
+        
+        <a href="/2018/07/20/集合的操作/" class="archive-article-date">
+  	<time datetime="2018-07-20T11:41:09.821Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-07-20</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>##直接赋值、浅拷贝和深拷贝的区别<br>直接赋值：若有a集合，a=b后，改变a任何值，b也改变随着改变。<br>浅拷贝：若有列表a=[1,2,3,[4,5]]，b.copy(a),若a改变1,2,3b也随着改变，若改变[4,5]b不改变。<br>深拷贝：若有列表a=[1,2,3,[4,5]]，b.deepcopy(a),无论a怎样变化，b都不改变。</p>
+<p>##集合</p>
+<p>###创建集合<br>集合对象支持 union（联合），intersection（交），difference（差）和 sysmmetric difference（对称差集）等数学运算<br>len()  获取集合长度  去除重复后的长度<br>max() 获取集合最大值  字母按ascii码比较<br>多集集合遍历<br>    集合={(值,值…),(值,值…),(值,值…)}<br>    for  变量1,变量2  in   集合:<br>        使用变量1和变量2</p>
+<p>###集合专用函数<br>add() 添加元素，无序插入<br>pop() 随机删除一个元素，当集合是由列表和元组组成时,set.pop()是从左边删除<br>discard(key) 删除元素，不同的是，如果删除的元素不在集合中，remove会报错，discard不会报错，返回值None<br>clear() 删除集合的所有元素（使它成为空集），不能清除某一个值<br>s.difference(t)  差集<br>s.intersection(t) 交集<br>s.union(t) 并集</p>
+
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color2">python知识点总结</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2018/07/20/集合的操作/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
     <article id="post-字典操作总结" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
