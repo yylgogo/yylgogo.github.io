@@ -165,6 +165,154 @@
           <div id="js-content" class="content-ll">
             
   
+    <article id="post-勾选地址" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2018/07/21/勾选地址/">勾选地址</a>
+    </h1>
+  
+
+        
+        <a href="/2018/07/21/勾选地址/" class="archive-article-date">
+  	<time datetime="2018-07-21T06:23:11.127Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-07-21</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>打印省、市、县三级菜单<br>可返回上一级<br>可随时退出程序<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br></pre></td><td class="code"><pre><span class="line">省=[<span class="string">'河南省'</span>,<span class="string">'河北省'</span>]</span><br><span class="line">河南省=[<span class="string">'开封市'</span>,<span class="string">'周口市'</span>,<span class="string">'洛阳市'</span>,<span class="string">'信阳市'</span>]</span><br><span class="line">河北省=[<span class="string">'唐山市'</span>,<span class="string">'秦皇岛市'</span>,<span class="string">'保定市'</span>,<span class="string">'张家口市'</span>]</span><br><span class="line">开封市=[<span class="string">'尉氏县'</span>,<span class="string">'通许县'</span>,<span class="string">'杞县'</span>,<span class="string">'兰考县'</span>]</span><br><span class="line">周口市=[<span class="string">'项城市'</span>,<span class="string">'郸城县'</span>,<span class="string">'淮阳县'</span>,<span class="string">'商水县'</span>]</span><br><span class="line">洛阳市=[<span class="string">'孟津县'</span>,<span class="string">'洛宁县'</span>,<span class="string">'汝阳县'</span>,<span class="string">'栾川县'</span>]</span><br><span class="line">信阳市=[<span class="string">'罗山县'</span>,<span class="string">'潢川县'</span>,<span class="string">'固始县'</span>,<span class="string">'淮滨县'</span>]</span><br><span class="line">唐山市=[<span class="string">'滦县'</span>,<span class="string">'滦南县'</span>,<span class="string">'乐亭县'</span>,<span class="string">'玉田县'</span>]</span><br><span class="line">秦皇岛市=[<span class="string">'昌黎县'</span>,<span class="string">'抚宁县'</span>,<span class="string">'卢龙县'</span>,<span class="string">'海港区'</span>]</span><br><span class="line">保定市=[<span class="string">'易县'</span>,<span class="string">'徐水县'</span>,<span class="string">'定兴县'</span>,<span class="string">'顺平县'</span>]</span><br><span class="line">张家口市=[<span class="string">'张家口市'</span>,<span class="string">'张北县'</span>,<span class="string">'康保县'</span>,<span class="string">'沽源县'</span>]</span><br><span class="line">l=[]</span><br><span class="line">flag=True</span><br><span class="line"><span class="keyword">while</span> flag:</span><br><span class="line">    <span class="built_in">print</span>(<span class="string">'按序号选择省份'</span>.center(43,<span class="string">'*'</span>))</span><br><span class="line">    <span class="keyword">for</span> i,j <span class="keyword">in</span> enumerate(省,1):</span><br><span class="line">        <span class="built_in">print</span>(<span class="string">'编号：&#123;&#125;\t  省份：&#123;&#125;'</span>.format(i,j))</span><br><span class="line">    <span class="built_in">print</span>(<span class="string">'*'</span>*50) </span><br><span class="line">    n=input(<span class="string">'请输入你所在省的编号,Q/q退出：'</span>).strip()</span><br><span class="line">    <span class="keyword">if</span> n.isdigit():</span><br><span class="line">        n=int(n)</span><br><span class="line">        <span class="keyword">if</span> 0&lt;n&lt;len(省)+1:</span><br><span class="line">            l.append(省[n-1])</span><br><span class="line">            <span class="built_in">print</span>(l)</span><br><span class="line">            <span class="keyword">while</span> flag:</span><br><span class="line">                <span class="built_in">print</span>(<span class="string">'按序号选择市区'</span>.center(43,<span class="string">'*'</span>))</span><br><span class="line">                <span class="keyword">for</span> i,j <span class="keyword">in</span> enumerate(<span class="built_in">eval</span>(省[n-1]),1):</span><br><span class="line">                    <span class="built_in">print</span>(<span class="string">'编号：&#123;&#125;\t  市区：&#123;&#125;'</span>.format(i,j))</span><br><span class="line">                <span class="built_in">print</span>(<span class="string">'*'</span>*50)</span><br><span class="line">                m=input(<span class="string">'请输入你所在市区的编号,Q/q退出,C/c返回上一步：'</span>).strip()</span><br><span class="line">                <span class="keyword">if</span> m.isdigit():</span><br><span class="line">                    m=int(m)</span><br><span class="line">                    <span class="keyword">if</span> 0&lt;m&lt;len(<span class="built_in">eval</span>(省[n-1]))+1:</span><br><span class="line">                        l.append(<span class="built_in">eval</span>(省[n-1])[m-1])</span><br><span class="line">                        <span class="built_in">print</span>(l)</span><br><span class="line">                        <span class="keyword">while</span> flag:</span><br><span class="line">                            <span class="built_in">print</span>(<span class="string">'按序号选择县'</span>.center(43,<span class="string">'*'</span>))</span><br><span class="line">                            <span class="keyword">for</span> i,j <span class="keyword">in</span> enumerate(<span class="built_in">eval</span>(<span class="built_in">eval</span>(省[n-1])[m-1]),1):</span><br><span class="line">                                <span class="built_in">print</span>(<span class="string">'编号：&#123;&#125;\t  县区：&#123;&#125;'</span>.format(i,j))</span><br><span class="line">                            <span class="built_in">print</span>(<span class="string">'*'</span>*50)</span><br><span class="line">                            x=input(<span class="string">'请输入你所在县区的编号,Q/q退出,C/c返回上一步：'</span>).strip()</span><br><span class="line">                            <span class="keyword">if</span> x.isdigit():</span><br><span class="line">                                x=int(x)</span><br><span class="line">                                <span class="keyword">if</span> 0&lt;x&lt;len(<span class="built_in">eval</span>(<span class="built_in">eval</span>(省[n-1])[m-1]))+1:</span><br><span class="line">                                    l.append(<span class="built_in">eval</span>(<span class="built_in">eval</span>(省[n-1])[m-1])[x-1])</span><br><span class="line">                                    <span class="built_in">print</span>(<span class="string">'成功记录你的地址!!!'</span>)</span><br><span class="line">                                    <span class="built_in">print</span>(l)</span><br><span class="line">                                    flag=False</span><br><span class="line">                                <span class="keyword">else</span>:</span><br><span class="line">                                    <span class="built_in">print</span>(<span class="string">'你输入的有误,请重新输入!!!'</span>)</span><br><span class="line">                                    <span class="built_in">continue</span></span><br><span class="line">                            <span class="keyword">elif</span> x.upper()==<span class="string">'C'</span>:</span><br><span class="line">                                l.pop()</span><br><span class="line">                                <span class="built_in">print</span>(<span class="string">'成功删除上一步!!!'</span>)</span><br><span class="line">                                <span class="built_in">break</span></span><br><span class="line">                            <span class="keyword">elif</span> x.upper()==<span class="string">'Q'</span>:</span><br><span class="line">                                <span class="built_in">print</span>(<span class="string">'退出成功，地址未保存!!!'</span>)</span><br><span class="line">                                flag=False</span><br><span class="line">                            <span class="keyword">else</span>:</span><br><span class="line">                                <span class="built_in">print</span>(<span class="string">'你输入的有误,请重新输入!!!'</span>)</span><br><span class="line">                                <span class="built_in">continue</span></span><br><span class="line">                    <span class="keyword">else</span>:</span><br><span class="line">                        <span class="built_in">print</span>(<span class="string">'你输入的有误,请重新输入!!!'</span>)</span><br><span class="line">                        <span class="built_in">continue</span></span><br><span class="line">                <span class="keyword">elif</span> m.upper()==<span class="string">'C'</span>:</span><br><span class="line">                    l.pop()</span><br><span class="line">                    <span class="built_in">print</span>(<span class="string">'成功删除上一步!!!'</span>)</span><br><span class="line">                    <span class="built_in">break</span></span><br><span class="line">                <span class="keyword">elif</span> m.upper()==<span class="string">'Q'</span>:</span><br><span class="line">                    <span class="built_in">print</span>(<span class="string">'退出成功，地址未保存!!!'</span>)</span><br><span class="line">                    flag=False</span><br><span class="line">                <span class="keyword">else</span>:</span><br><span class="line">                    <span class="built_in">print</span>(<span class="string">'你输入的有误,请重新输入!!!'</span>)</span><br><span class="line">                    <span class="built_in">continue</span></span><br><span class="line">        <span class="keyword">else</span>:</span><br><span class="line">            <span class="built_in">print</span>(<span class="string">'你输入的有误,请重新输入!!!'</span>)</span><br><span class="line">            <span class="built_in">continue</span></span><br><span class="line">    <span class="keyword">elif</span> m.upper()==<span class="string">'Q'</span>:</span><br><span class="line">        <span class="built_in">print</span>(<span class="string">'退出成功，地址未保存!!!'</span>)</span><br><span class="line">        flag=False</span><br><span class="line">    <span class="keyword">else</span>:</span><br><span class="line">        <span class="built_in">print</span>(<span class="string">'你输入的有误,请重新输入!!!'</span>)</span><br><span class="line">        <span class="built_in">continue</span></span><br></pre></td></tr></table></figure></p>
+
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">完整小程序</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2018/07/21/勾选地址/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
+    <article id="post-购物车" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2018/07/21/购物车/">购物车</a>
+    </h1>
+  
+
+        
+        <a href="/2018/07/21/购物车/" class="archive-article-date">
+  	<time datetime="2018-07-21T06:20:24.443Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-07-21</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>写一个购物车<br>购物车<br>功能要求：<br>要求用户输入总资产，例如：2000<br>显示商品列表，让用户根据序号选择商品，加入购物车<br>购买，如果商品总额大于总资产，提示账户余额不足，否则，购买成功。<br>钱-商品（名称，价格）-操作（买，删除，充值，退出）<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">while</span> True:</span><br><span class="line">    money=input(<span class="string">'请输入你的身价：'</span>).strip()</span><br><span class="line">    <span class="comment">#print(money.isdigit())</span></span><br><span class="line">    <span class="keyword">if</span> money.isdigit():</span><br><span class="line">        <span class="built_in">break</span></span><br><span class="line">    <span class="keyword">else</span>:</span><br><span class="line">        <span class="built_in">print</span>(<span class="string">'你的身价输入有误，请重新输入'</span>)</span><br><span class="line">money=int(money)</span><br><span class="line">goods = [&#123;<span class="string">"name"</span>: <span class="string">"电脑"</span>, <span class="string">"price"</span>: 2999&#125;,</span><br><span class="line">&#123;<span class="string">"name"</span>: <span class="string">"鼠标"</span>, <span class="string">"price"</span>: 1000&#125;,</span><br><span class="line">&#123;<span class="string">"name"</span>: <span class="string">"游艇"</span>, <span class="string">"price"</span>: 2000&#125;,</span><br><span class="line">&#123;<span class="string">"name"</span>: <span class="string">"美女"</span>, <span class="string">"price"</span>: 9998&#125;]</span><br><span class="line">good1=&#123;<span class="string">'电脑'</span>:2999,<span class="string">'鼠标'</span>:1000,<span class="string">'游艇'</span>:2000,<span class="string">'美女'</span>:9998&#125;</span><br><span class="line">buy=[]<span class="comment">#放购买的商品</span></span><br><span class="line"><span class="keyword">while</span> True:</span><br><span class="line">    <span class="built_in">print</span>(<span class="string">'请选择对应的商品编号'</span>.center(30,<span class="string">'*'</span>))</span><br><span class="line">    <span class="keyword">for</span> i,j <span class="keyword">in</span> enumerate(goods,1): </span><br><span class="line">        <span class="built_in">print</span>(<span class="string">'编号：&#123;&#125;\t商品名称：&#123;&#125;\t商品价格：&#123;&#125;'</span>.format(i,j[<span class="string">'name'</span>],j[<span class="string">'price'</span>]))</span><br><span class="line">    <span class="built_in">print</span>(<span class="string">'*'</span>*50)</span><br><span class="line">    number=input(<span class="string">'请输入你要买的商品编号(充值请按C/c，删除请按D/d,退出请按Q/q)'</span>).strip()</span><br><span class="line">    <span class="keyword">if</span> number.isdigit():</span><br><span class="line">        number=int(number)</span><br><span class="line">        <span class="keyword">if</span> number&lt;=len(goods):</span><br><span class="line">            <span class="keyword">if</span> goods[number-1][<span class="string">'price'</span>]&lt;=money:</span><br><span class="line">                buy.append(goods[number-1][<span class="string">'name'</span>])</span><br><span class="line">                money-=goods[number-1][<span class="string">'price'</span>]</span><br><span class="line">                <span class="built_in">print</span>(<span class="string">'已经购买成功%s，剩余资产%d'</span>%(goods[number-1][<span class="string">'name'</span>],money))</span><br><span class="line">                <span class="built_in">continue</span></span><br><span class="line">            <span class="keyword">else</span>:</span><br><span class="line">                <span class="built_in">print</span>(<span class="string">'余额不足请充值'</span>)</span><br><span class="line">        <span class="keyword">else</span>:</span><br><span class="line">            <span class="built_in">print</span>(<span class="string">'没有当前商品'</span>)</span><br><span class="line">    <span class="keyword">elif</span> number.upper()==<span class="string">'C'</span>:</span><br><span class="line">        <span class="keyword">while</span> True:</span><br><span class="line">            money1=input(<span class="string">'请输入你充值的金额：'</span>).strip()</span><br><span class="line">            <span class="keyword">if</span> money1.isdigit():</span><br><span class="line">                money+=int(money1)</span><br><span class="line">                <span class="built_in">print</span>(<span class="string">'充值成功,剩余资产%d'</span>%money)</span><br><span class="line">                <span class="built_in">break</span></span><br><span class="line">            <span class="keyword">else</span>:</span><br><span class="line">                <span class="built_in">print</span>(<span class="string">'充值失败,请重新充值'</span>)</span><br><span class="line">            <span class="built_in">continue</span></span><br><span class="line">        <span class="built_in">continue</span></span><br><span class="line">    <span class="keyword">elif</span> number.upper()==<span class="string">'D'</span>:</span><br><span class="line">        money+=good1[buy[-1]]</span><br><span class="line">        del buy[-1]</span><br><span class="line">        <span class="built_in">print</span>(<span class="string">'成功删除上步操作，剩余资产%d'</span>%money)</span><br><span class="line">        <span class="built_in">continue</span></span><br><span class="line">    <span class="keyword">elif</span> number.upper()==<span class="string">'Q'</span>:</span><br><span class="line">        <span class="built_in">print</span>(<span class="string">'已成功购买的商品'</span>)</span><br><span class="line">        <span class="built_in">print</span>(buy)</span><br><span class="line">        <span class="built_in">print</span>(<span class="string">'余额:%d'</span>%money)</span><br><span class="line">        <span class="built_in">print</span>(<span class="string">'退出'</span>)</span><br><span class="line">        <span class="built_in">break</span></span><br></pre></td></tr></table></figure></p>
+
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">完整小程序</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2018/07/21/购物车/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
     <article id="post-集合的操作" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
@@ -570,6 +718,10 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color2">python知识点总结</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color1">完整小程序</a>
               </li>
             
             <div class="clearfix"></div>
